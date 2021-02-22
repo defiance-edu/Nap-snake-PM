@@ -40,12 +40,12 @@ function draw() {
 function showIntro() {
     var canvas = document.getElementById("canvas");
     var ctx=canvas.getContext("2d");
-    ctx.font="30px Arial";
+    ctx.font="30px Courier New";
     ctx.fillStyle = "white";
     ctx.textAlign = "center";
     ctx.fillText("SNAKE", canvas.width/2, canvas.height/2);
 
-    ctx.font="20px Arial";
+    ctx.font="20px Courier New";
     ctx.fillText("press space to start", canvas.width/2, canvas.height/2+40);
 }
 
@@ -53,11 +53,11 @@ function showConclusion(score) {
     screenclear();
     var canvas = document.getElementById("canvas");
     var ctx=canvas.getContext("2d");
-    ctx.font="30px Arial";
+    ctx.font="30px Courier New";
     ctx.fillStyle = "white";
     ctx.textAlign = "center";
     ctx.fillText("GAME OVER", canvas.width/2, canvas.height/2);
     ctx.fillText("score: " + score, canvas.width/2, canvas.height/2-40);
-    ctx.font="20px Arial";
+    ctx.font="20px Courier New";
     ctx.fillText("press space to start", canvas.width/2, canvas.height/2+80);
 }
